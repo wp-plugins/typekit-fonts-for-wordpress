@@ -1,10 +1,4 @@
 <?php
-/*
-$URL: https://svn.om4.com.au/svn/wp-plugins/trunk/typekit-fonts-for-wordpress/typekit-admin.php $
-$Revision: 2760 $
-$LastChangedDate: 2009-11-18 13:09:00 +1100 (Wed, 18 Nov 2009) $
-$Id: typekit-admin.php 2760 2009-11-18 02:09:00Z james $
-*/
 
 /**
  * The Administration interface

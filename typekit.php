@@ -1,13 +1,9 @@
 <?php
 /*
-	$Id: typekit.php 2762 2009-11-18 02:28:44Z james $
-*/
-
-/*
 Plugin Name: Typekit Fonts for WordPress
 Plugin URI: http://om4.com.au/wordpress-plugins/typekit-fonts-for-wordpress-plugin/
 Description: Use a range of hundreds of high quality fonts on your WordPress website by integrating the <a href="http://typekit.com">Typekit</a> font service into your WordPress blog.
-Version: 0.9.0
+Version: 1.0.0
 Author: OM4
 Author URI: http://om4.com.au/
 Text Domain: om4-typekit
