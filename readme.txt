@@ -38,11 +38,19 @@ There are detailed instructions on the plugin's settings page. See screenshot #2
 
 Yes, see the plugin's description for more information.
 
+= Which web browser(s) does Typekit support? =
+
+Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser_support) for information on [Typekit web browser support](http://getsatisfaction.com/typekit/topics/typekit_browser_support). 
+
 == Screenshots ==
 1. Settings/configuration page
 2. Detailed inline help
 
 == Changelog ==
+
+= v1.0.1 =
+
+* Improve FAQ
 
 = v1.0.0 =
 
