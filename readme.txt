@@ -2,8 +2,8 @@
 Contributors: jamescollins, glenn-om4
 Tags: typekit, fonts, font, design, wp, wpmu
 Requires at least: 2.8
-Tested up to: 2.8.6
-Stable tag: 1.0.0
+Tested up to: 2.9
+Stable tag: 1.0.1
 
 Use a range of hundreds of high quality fonts on your WordPress website by integrating the Typekit font service into your WordPress blog.
 
@@ -49,7 +49,7 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 == Changelog ==
 
 = v1.0.1 =
-
+* WordPress 2.9 compatibility
 * Improve FAQ
 
 = v1.0.0 =
