@@ -9,9 +9,9 @@ Use a range of hundreds of high quality fonts on your WordPress website by integ
 
 == Description ==
 
-[Typekit](http://www.typekit.com) offer a service that allows you to select from a range of hundreds of high quality fonts for your WordPress website. The fonts are applied using the font-face standard, so they are standards compliant, fully licensed and accessible.
+Allows you to embed and use [Typekit](http://www.typekit.com) fonts in your WordPress website without having to edit your theme's header or CSS files.
 
-This plugin allows you to embed and use Typekit fonts in your WordPress blog without having to edit your theme's header or CSS files.
+Typekit offer a service that allows you to select from a range of hundreds of high quality fonts for your WordPress website. The fonts are applied using the font-face standard, so they are standards compliant, fully licensed and accessible.
 
 To use this plugin you need to sign up with Typekit, install this plugin and then configure CSS for your site. Detailed instructions are available on the plugin's settings page.
 
