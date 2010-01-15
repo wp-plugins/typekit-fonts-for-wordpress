@@ -48,10 +48,14 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 
 == Changelog ==
 
+= v1.0.2 =
+* Add instructions on how to use Typekit Kit Editor selectors.
+* Add instructions on how to use font weights / styles. 
+
 = v1.0.1 =
 * WordPress 2.9 compatibility
 * Improve FAQ
 
 = v1.0.0 =
 
-* Inital release.
+* Initial release.
