@@ -9,11 +9,13 @@ Use a range of hundreds of high quality fonts on your WordPress website by integ
 
 == Description ==
 
-Allows you to embed and use [Typekit](http://www.typekit.com) fonts in your WordPress website without having to edit your theme's header or CSS files.
+Allows you to embed and use [Typekit](http://www.typekit.com) fonts in your WordPress or WordPress MU website without having to edit your theme.
 
 Typekit offer a service that allows you to select from a range of hundreds of high quality fonts for your WordPress website. The fonts are applied using the font-face standard, so they are standards compliant, fully licensed and accessible.
 
-To use this plugin you need to sign up with Typekit, install this plugin and then configure CSS for your site. Detailed instructions are available on the plugin's settings page.
+To use this plugin you need to sign up with Typekit, install this plugin and then either configure some Typekit selectors or define your own CSS rules. Typekit selectors provide a quick and easy way to get fonts enabled on your site.  Using your own CSS rules (as explained in Typekit's Advanced tips) gives you more control and lets you access additional attributes such as font-weight. This plugin allows you to create your own CSS rules that use Typekit fonts without the need to edit/upload CSS style sheets. 
+
+Detailed instructions are available on the plugin's settings page.
 
 Compatible with both WordPress and WordPress MU (WPMU).
 
