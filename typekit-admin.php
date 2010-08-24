@@ -67,7 +67,7 @@ class OM4_Typekit_Admin {
 					<?php
 				} else {
 					// ensure the Typekit account ID maps to a valid JS file on Typekit's servers (ie doesn't return a 404 error)
-					$url = sprintf($this->typekitInstance->embedcodeurl, $id);
+					$url = sprintf($this->typekitInstance->embedcodeurl, $this->typekitInstance->scheme, $id);
 					$result = wp_remote_head($url);
 					if (is_array($result) && $result['response']['code'] == 404) {
 						?>
@@ -100,8 +100,9 @@ class OM4_Typekit_Admin {
 		</ol>
 		<h3><?php _e('Plugin Configuration', 'om4-typekit'); ?></h3>
 		<ol start="4">
-			<li><?php _e('Enter the whole 2 lines of your embed code into the box below:', 'om4-typekit'); ?><br />
-				<p class="option"><label for="embedcode"><?php _e('Typekit Embed Code:', 'om4-typekit'); ?></label> <textarea name="embedcode" rows="3" cols="80" /><?php echo $this->typekitInstance->GetEmbedCode(); ?></textarea></p>
+			<li><?php _e('Enter the whole 2 lines of your embed code into the box below.', 'om4-typekit'); ?><br />
+				<p class="option"><label for="embedcode"><?php _e('Typekit Embed Code:', 'om4-typekit'); ?></label> <textarea name="embedcode" rows="3" cols="80" /><?php echo $this->typekitInstance->GetEmbedCode(); ?></textarea><br />
+				<?php _e('Note: If you website loads over SSL/HTTPS, then the SSL Typekit embed code is used automatically (regardless of which scheme is pasted above).', 'om4-typekit'); ?></p>
 
 			</li>
 			<li><?php _e('You can add selectors using the Typekit Kit Editor. Alternatively you can define your own CSS rules in your own style sheet or using the Custom CSS Rules field below (technical note: these CSS rules will be embedded in the header of each page). Look at the advanced examples shown in the Typekit editor for ideas.', 'om4-typekit'); ?>
