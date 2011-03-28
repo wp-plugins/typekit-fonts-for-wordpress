@@ -1,20 +1,16 @@
-# Translation of the WordPress plugin   by .
 # Copyright (C) 2010 
 # This file is distributed under the same license as the  package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/typekit-fonts-for-wordpress\n"
-"POT-Creation-Date: 2010-08-24 02:22+0000\n"
+"POT-Creation-Date: 2011-03-28 01:09:19+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 
 #: typekit-admin.php:28
 msgid "Typekit Fonts"
@@ -27,17 +23,14 @@ msgid ""
 msgstr ""
 
 #: typekit-admin.php:60
-#, php-format
 msgid "Invalid Typekit embed code. %s"
 msgstr ""
 
 #: typekit-admin.php:63
-#, php-format
 msgid "You must enter your Typekit embed code. %s"
 msgstr ""
 
 #: typekit-admin.php:75
-#, php-format
 msgid ""
 "Your Typekit embed code may be incorrect because  <a href=\"%1$s\" target="
 "\"_blank\">%1$s</a> does not exist. Please verify that your Typekit embed "
@@ -223,7 +216,6 @@ msgid ""
 msgstr ""
 
 #: typekit-admin.php:141
-#, php-format
 msgid "See <a href=\"%s\">this help article</a> for more details."
 msgstr ""
 
