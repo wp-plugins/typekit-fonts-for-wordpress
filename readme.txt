@@ -1,15 +1,16 @@
 === Typekit Fonts for WordPress ===
 Contributors: jamescollins, glenn-om4
-Tags: typekit, fonts, font, design, wp, wpmu
+Donate link: http://om4.com.au/wordpress-plugins/#donate
+Tags: typekit, fonts, font, design, wp, multisite, wpmu
 Requires at least: 2.8
-Tested up to: 3.0.1
-Stable tag: 1.0.3
+Tested up to: 3.1
+Stable tag: 1.1
 
 Use a range of hundreds of high quality fonts on your WordPress website by integrating the Typekit font service into your WordPress blog.
 
 == Description ==
 
-Allows you to embed and use [Typekit](http://www.typekit.com) fonts in your WordPress or WordPress MU website without having to edit your theme.
+Allows you to embed and use [Typekit](http://www.typekit.com) fonts in your WordPress website without having to edit your theme.
 
 Typekit offer a service that allows you to select from a range of hundreds of high quality fonts for your WordPress website. The fonts are applied using the font-face standard, so they are standards compliant, fully licensed and accessible.
 
@@ -17,9 +18,9 @@ To use this plugin you need to sign up with Typekit, install this plugin and the
 
 Detailed instructions are available on the plugin's settings page.
 
-Compatible with both WordPress and WordPress MU (WPMU).
+Compatible with WordPress Multisite.
 
-This plugin is designed to function securely with both WordPress and WordPress MU. When the JavaScript Embed Code is entered on the settings page, the user account id is extracted from the embed code and the correctly formed Typekit Embed Code is included in the site header, so it is not possible to use the Embed Code field to include arbitrary JavaScript. The Custom CSS field is also filtered, and doesn't allow any HTML code to be entered.
+This plugin is designed to function securely with both WordPress and WordPress Multisite. When the JavaScript Embed Code is entered on the settings page, the user account id is extracted from the embed code and the correctly formed Typekit Embed Code is included in the site header, so it is not possible to use the Embed Code field to include arbitrary JavaScript. The Custom CSS field is also filtered, and doesn't allow any HTML code to be entered.
 
 If the website is using HTTPS/SSL, the SSL version of the Typekit embed code is automatically used instead.
 
@@ -52,18 +53,25 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 
 == Changelog ==
 
-= v1.0.3 =
+= 1.1 =
+* WordPress 3.1 compatibility.
+
+= 1.0.3 =
 * Add support for HTTPS/SSL websites.
 * WordPress 3.0.1 compatibility.
 
-= v1.0.2 =
+= 1.0.2 =
 * Add instructions on how to use Typekit Kit Editor selectors.
 * Add instructions on how to use font weights / styles. 
 
-= v1.0.1 =
+= 1.0.1 =
 * WordPress 2.9 compatibility.
 * Improve FAQ.
 
-= v1.0.0 =
-
+= 1.0.0 =
 * Initial release.
+
+== Upgrade Notice ==
+
+= 1.1 =
+* WordPress 3.1 compatibility.
