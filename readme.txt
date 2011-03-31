@@ -53,6 +53,11 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 
 == Changelog ==
 
+= 1.1.1 =
+* Translation/localization improvements.
+* Fix localization deprecated notice (thanks to aradams for reporting).
+* Store translation files in a /languages sub directory.
+
 = 1.1 =
 * WordPress 3.1 compatibility.
 

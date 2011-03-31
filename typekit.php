@@ -3,7 +3,7 @@
 Plugin Name: Typekit Fonts for WordPress
 Plugin URI: http://om4.com.au/wordpress-plugins/typekit-fonts-for-wordpress-plugin/
 Description: Use a range of hundreds of high quality fonts on your WordPress website by integrating the <a href="http://typekit.com">Typekit</a> font service into your WordPress blog.
-Version: 1.1
+Version: 1.1.1-dev
 Author: OM4
 Author URI: http://om4.com.au/
 Text Domain: om4-typekit
@@ -100,11 +100,15 @@ class OM4_Typekit {
 	}
 	
 	/**
-	 * Intialise I18n
+	 * Load up the localization file if we're using WordPress in a different language.
+	 *
+	 * Place it in this plugin's "languages" folder and name it "om4-typekit-[value in wp-config].mo".
+	 *
+	 * See languages/_readme.txt for more information.
 	 *
 	 */
 	function LoadDomain() {
-		load_plugin_textdomain('om4-typekit', WP_PLUGIN_DIR.'/'.dirname(plugin_basename(__FILE__)));
+		load_plugin_textdomain( 'om4-typekit', false, "{$this->dirname}/languages" );
 	}
 	
 	/**
