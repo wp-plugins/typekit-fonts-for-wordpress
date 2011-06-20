@@ -2,9 +2,9 @@
 Contributors: jamescollins, glenn-om4
 Donate link: http://om4.com.au/wordpress-plugins/#donate
 Tags: typekit, fonts, font, design, wp, multisite, wpmu
-Requires at least: 2.8
-Tested up to: 3.1
-Stable tag: 1.1
+Requires at least: 3.1
+Tested up to: 3.2
+Stable tag: 1.2
 
 Use a range of hundreds of high quality fonts on your WordPress website by integrating the Typekit font service into your WordPress blog.
 
@@ -23,6 +23,8 @@ Compatible with WordPress Multisite.
 This plugin is designed to function securely with both WordPress and WordPress Multisite. When the JavaScript Embed Code is entered on the settings page, the user account id is extracted from the embed code and the correctly formed Typekit Embed Code is included in the site header, so it is not possible to use the Embed Code field to include arbitrary JavaScript. The Custom CSS field is also filtered, and doesn't allow any HTML code to be entered.
 
 If the website is using HTTPS/SSL, the SSL version of the Typekit embed code is automatically used instead.
+
+See the [Typekit Fonts for WordPress Plugin](http://om4.com.au/wordpress-plugins/typekit-fonts-for-wordpress-plugin/) home page for further information.
 
 == Installation ==
 
@@ -53,7 +55,10 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 
 == Changelog ==
 
-= 1.1.1 =
+= 1.2 =
+* Fix invalid HTML on settings page.
+* Properly save/display settings.
+* WordPress 3.2 compatibility.
 * Translation/localization improvements.
 * Fix localization deprecated notice (thanks to aradams for reporting).
 * Store translation files in a /languages sub directory.
@@ -77,6 +82,9 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2 =
+* WordPress 3.2 compatibility, translation/localization improvements, invalid HTML fixes.
 
 = 1.1 =
 * WordPress 3.1 compatibility.

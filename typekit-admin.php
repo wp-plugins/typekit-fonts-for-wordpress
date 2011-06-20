@@ -101,12 +101,12 @@ class OM4_Typekit_Admin {
 		<h3><?php _e('Plugin Configuration', 'om4-typekit'); ?></h3>
 		<ol start="4">
 			<li><?php _e('Enter the whole 2 lines of your embed code into the box below.', 'om4-typekit'); ?><br />
-				<p class="option"><label for="embedcode"><?php _e('Typekit Embed Code:', 'om4-typekit'); ?></label> <textarea name="embedcode" rows="3" cols="80" /><?php echo $this->typekitInstance->GetEmbedCode(); ?></textarea><br />
+				<p class="option"><label for="embedcode"><?php _e('Typekit Embed Code:', 'om4-typekit'); ?></label> <textarea name="embedcode" rows="3" cols="80"><?php echo esc_textarea( $this->typekitInstance->GetEmbedCode() ); ?></textarea><br />
 				<?php _e('Note: If you website loads over SSL/HTTPS, then the SSL Typekit embed code is used automatically (regardless of which scheme is pasted above).', 'om4-typekit'); ?></p>
 
 			</li>
 			<li><?php _e('You can add selectors using the Typekit Kit Editor. Alternatively you can define your own CSS rules in your own style sheet or using the Custom CSS Rules field below (technical note: these CSS rules will be embedded in the header of each page). Look at the advanced examples shown in the Typekit editor for ideas.', 'om4-typekit'); ?>
-				<p class="option"><label for="css"><?php _e('Custom CSS Rules:', 'om4-typekit'); ?></label> <textarea name="css" rows="10" cols="80" /><?php echo $this->typekitInstance->GetCSSRules(); ?></textarea><br />
+				<p class="option"><label for="css"><?php _e('Custom CSS Rules:', 'om4-typekit'); ?></label> <textarea name="css" rows="10" cols="80"><?php echo esc_textarea( $this->typekitInstance->GetCSSRules() ); ?></textarea><br />
 				<a href="#help-css"><?php _e('Click here for help on CSS', 'om4-typekit'); ?></a>
 				</p>
 			</li>
