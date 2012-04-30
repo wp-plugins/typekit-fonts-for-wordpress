@@ -3,8 +3,10 @@ Contributors: jamescollins, glenn-om4
 Donate link: http://om4.com.au/wordpress-plugins/#donate
 Tags: typekit, fonts, font, design, wp, multisite, wpmu
 Requires at least: 3.1
-Tested up to: 3.3
-Stable tag: 1.3
+Tested up to: 3.4
+Stable tag: 1.3.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Use a range of hundreds of high quality fonts on your WordPress website by integrating the Typekit font service into your WordPress blog.
 
@@ -55,6 +57,10 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 
 == Changelog ==
 
+= 1.3.1 =
+* WordPress 3.4 compatibility.
+* Clarify license as GPLv2 or later.
+
 = 1.3 =
 * WordPress 3.3 compatibility.
 
@@ -85,6 +91,9 @@ Please see [this page](http://getsatisfaction.com/typekit/topics/typekit_browser
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.1 =
+* WordPress 3.4 compatibility, clarify license as GPLv2 or later.
 
 = 1.3 =
 * WordPress 3.3 compatibility.
