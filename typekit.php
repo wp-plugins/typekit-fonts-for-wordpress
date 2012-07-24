@@ -3,7 +3,7 @@
 Plugin Name: Typekit Fonts for WordPress
 Plugin URI: http://om4.com.au/wordpress-plugins/typekit-fonts-for-wordpress-plugin/
 Description: Use a range of hundreds of high quality fonts on your WordPress website by integrating the <a href="http://typekit.com">Typekit</a> font service into your WordPress blog.
-Version: 1.3.1
+Version: 1.4
 Author: OM4
 Author URI: http://om4.com.au/
 Text Domain: om4-typekit
@@ -41,24 +41,26 @@ class OM4_Typekit {
 	
 	var $admin;
 	
-	var $embedcode = '<script type="text/javascript" src="%s://use.typekit.com/%s.js"></script>
+	var $embedcode = '<script type="text/javascript" src="//use.typekit.net/%s.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
 	
 	/**
 	 * Perl-based regular expression that is used to extract the ID from the typekit embed code
 	 * 
 	 * The ID can contain numbers and letters only
+	 *
+	 * Ref: http://core.trac.wordpress.org/changeset/21166
 	 * 
 	 * @var string
 	 */
-	var $embedcoderegexp = '#http(s?)://use\.typekit\.com/([a-z0-9]*)\.js#i';
+	var $embedcoderegexp = '#(https?:)?//use\.typekit\.(com|net)/([a-z0-9]*)\.js#i';
 	
 	/**
-	 * The format for the Typekit JS file URL
+	 * The format for the Typekit JS file URL. Used in HTTP requests to verify that the URL doesn't produce a 404 error
 	 * 
 	 * @var string
 	 */
-	var $embedcodeurl = '%s://use.typekit.com/%s.js';
+	var $embedcodeurl = '%s://use.typekit.net/%s.js';
 	
 	/*
 	 * Default settings
@@ -169,7 +171,7 @@ class OM4_Typekit {
 	 * @return string The typekit embed code if the unique account ID has been set, otherwise an empty string
 	 */
 	function GetEmbedCode() {
-		if ('' != $id = $this->GetAccountID()) return sprintf($this->embedcode, $this->scheme, $id);
+		if ('' != $id = $this->GetAccountID()) return sprintf($this->embedcode, $id);
 		return '';
 	}
 	
@@ -191,8 +193,8 @@ class OM4_Typekit {
 		
 		$this->settings['id'] = '';
 		// Attempt to extract the kit ID from the embed code using our regular expression
-		if (preg_match($this->embedcoderegexp, $code, $matches) && sizeof($matches) == 3) {
-			$this->settings['id'] = $matches[2];
+		if ( preg_match($this->embedcoderegexp, $code, $matches) && 4 == sizeof($matches) ) {
+			$this->settings['id'] = $matches[3];
 		}
 	}
 	
@@ -230,11 +232,11 @@ class OM4_Typekit {
 
 <style type="text/css">
 <?php echo $this->settings['css']; ?>
-
 </style>
 <?php
 		}
 ?>
+
 <!-- END Typekit Fonts for WordPress -->
 
 <?php
