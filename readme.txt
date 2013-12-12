@@ -4,7 +4,7 @@ Donate link: http://om4.com.au/wordpress-plugins/#donate
 Tags: typekit, fonts, font, design, wp, multisite, wpmu
 Requires at least: 3.6
 Tested up to: 3.8
-Stable tag: 16
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
